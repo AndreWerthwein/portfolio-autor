@@ -1,0 +1,36 @@
+@import ../abstracts/variables.sass
+
+// ---- legal-notices:content ---- //
+
+.legal-notices-grid
+    display: grid
+    grid-template-columns: calc(50% - #{$spacing-m}) calc(50% - #{$spacing-m})
+    grid-column-gap: $spacing-xl
+
+// ---- legal-notices:footer ---- //
+
+footer
+    margin: $spacing-xxl 0px $spacing-l 0px 
+    font-size: 1rem
+    line-height: 1
+
+footer p
+    margin: 0px
+
+footer ul
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin: 0px 0px 0px 122px
+
+footer li
+    margin: 0px $spacing-m 0px 0px
+
+footer a
+    text-decoration: none
+    transition: all 0.3s ease-in-out
+
+footer a:hover,
+footer a:focus,
+footer a:active
+    text-decoration: underline
