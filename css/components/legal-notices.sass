@@ -1,18 +1,31 @@
 @import ../abstracts/variables.sass
 
-// ---- legal-notices:content ---- //
-
+// ---- legal-notices:grid ---- //
 .legal-notices-grid
     display: grid
     grid-template-columns: calc(50% - #{$spacing-m}) calc(50% - #{$spacing-m})
-    grid-column-gap: $spacing-xl
+    grid-column-gap: $spacing-l
+
+@media all and (max-width: 925px)
+    .legal-notices-grid
+        grid-template-columns: 100%
+
+.highlighting-frame
+    padding: 0px $spacing-m
+    border-left: calc(#{$spacing-s} / 2) $primary solid
+    border-right: calc(#{$spacing-s} / 2) $primary solid
+
+.highlighting-frame h5
+    line-height: 1.6
 
 // ---- legal-notices:footer ---- //
 
 footer
-    margin: $spacing-xxl 0px $spacing-l 0px 
+    margin: calc(#{$spacing-xl} + #{$spacing-s}) 0px $spacing-l 0px
+    padding: $spacing-l 0px 0px 0px 
     font-size: 1rem
     line-height: 1
+    border-top: 1px $black solid
 
 footer p
     margin: 0px
@@ -21,9 +34,15 @@ footer ul
     display: flex
     justify-content: flex-start
     align-items: center
+    flex-wrap: wrap
+
+footer ul:first-child
+    margin: 0px 0px $spacing-s 0px
+
+footer ul:last-child
     margin: 0px 0px 0px 122px
 
-footer li
+footer li:not(:last-child)
     margin: 0px $spacing-m 0px 0px
 
 footer a
@@ -34,3 +53,16 @@ footer a:hover,
 footer a:focus,
 footer a:active
     text-decoration: underline
+
+footer > section
+    display: flex
+    justify-content: space-between
+    align-items: top
+    
+footer > section p
+    font-family: 'Crimson Pro Italic', Arial, Helvetica, sans-serif
+    font-style: italic
+
+@media all and (max-width: 925px)
+    footer ul:last-child
+        margin: 0px
