@@ -21,11 +21,18 @@
 // ---- legal-notices:footer ---- //
 
 footer
+    display: flex
+    justify-content: space-between
+    align-items: top
     margin: calc(#{$spacing-xl} + #{$spacing-s}) 0px $spacing-l 0px
     padding: $spacing-l 0px 0px 0px 
     font-size: 1rem
     line-height: 1
     border-top: 1px $black solid
+
+footer img
+    width: $width-xl
+    height: $height-xl
 
 footer p
     margin: 0px
@@ -36,10 +43,10 @@ footer ul
     align-items: center
     flex-wrap: wrap
 
-footer ul:first-child
-    margin: 0px 0px $spacing-s 0px
+footer section ul
+    margin: 0px
 
-footer ul:last-child
+footer ul
     margin: 0px 0px 0px 122px
 
 footer li:not(:last-child)
@@ -54,12 +61,12 @@ footer a:focus,
 footer a:active
     text-decoration: underline
 
-footer > section
+footer section
     display: flex
     justify-content: space-between
     align-items: top
     
-footer > section p
+footer section p
     font-family: 'Crimson Pro Italic', Arial, Helvetica, sans-serif
     font-style: italic
 

@@ -271,11 +271,18 @@ table td:nth-child(odd) {
   line-height: 1.6; }
 
 footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
   margin: calc(32px + 8px) 0px 24px 0px;
   padding: 24px 0px 0px 0px;
   font-size: 1rem;
   line-height: 1;
   border-top: 1px #000000 solid; }
+
+footer img {
+  width: 32px;
+  height: 32px; }
 
 footer p {
   margin: 0px; }
@@ -286,10 +293,10 @@ footer ul {
   align-items: center;
   flex-wrap: wrap; }
 
-footer ul:first-child {
-  margin: 0px 0px 8px 0px; }
+footer section ul {
+  margin: 0px; }
 
-footer ul:last-child {
+footer ul {
   margin: 0px 0px 0px 122px; }
 
 footer li:not(:last-child) {
@@ -304,12 +311,12 @@ footer a:focus,
 footer a:active {
   text-decoration: underline; }
 
-footer > section {
+footer section {
   display: flex;
   justify-content: space-between;
   align-items: top; }
 
-footer > section p {
+footer section p {
   font-family: 'Crimson Pro Italic', Arial, Helvetica, sans-serif;
   font-style: italic; }
 
