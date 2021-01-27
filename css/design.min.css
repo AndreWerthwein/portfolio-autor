@@ -199,6 +199,25 @@ input:hover, input:focus, input:active, textarea:hover, textarea:focus, textarea
   src: url("../src/typefaces/crimson-pro-italic.eot");
   src: local("Crimson Pro Italic"), url("../src/typefaces/crimson-pro-italic.eot?#iefix") format("embedded-opentype"), url("../src/typefaces/crimson-pro-italic.woff2") format("woff2"), url("../src/typefaces/crimson-pro-italic.woff") format("woff"), url("../src/typefaces/crimson-pro-italic.ttf") format("truetype"), url("../src/typefaces/crimson-pro-italic.svg#CrimsonPro") format("svg"); }
 
+::selection {
+  background: coral !important;
+  color: #FFFFFF !important; }
+
+::-moz-selection {
+  background: coral !important;
+  color: #FFFFFF !important; }
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  z-index: 5; }
+
+::-webkit-scrollbar-thumb:vertical {
+  background: coral; }
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: coral; }
+
 html {
   font-family: 'Crimson Pro Regular', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -365,7 +384,7 @@ footer img {
   height: 48px;
   background-color: coral; }
 
-.navigation-main-index > section > p {
+.navigation-main-index > section p {
   font-family: 'Crimson Pro Bold', Helvetica, Arial, sans-serif;
   font-weight: 800;
   font-size: 1.2rem;

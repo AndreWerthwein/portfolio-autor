@@ -1,0 +1,24 @@
+@import "../abstracts/variables.sass"
+    
+// ---- browser-vendor-overwrite: user-selection ---- //
+
+::selection
+  background: $primary !important
+  color: $white !important
+
+::-moz-selection
+  background: $primary !important
+  color: $white !important
+
+// ---- browser-vendor-overwrite: scrollbar ---- //
+
+::-webkit-scrollbar
+  width: $width-s
+  height: $height-s
+  z-index: 5
+
+::-webkit-scrollbar-thumb:vertical
+  background: $primary
+
+::-webkit-scrollbar-thumb:horizontal
+  background: $primary

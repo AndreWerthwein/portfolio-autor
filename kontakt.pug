@@ -8,64 +8,94 @@ html(lang="de")
         link(rel="stylesheet" href="./css/design.min.css")
         title Portfolio — Autor
     body
-        h1 Kontakt
-        
-        section.legal-notices-grid
+        header#navigation-main.navigation-main-index
+            a(href="./index.html")
+                img(src="./media/logo.png")
+            section.column-color
             section
-                h4 Kontakt
+            section
+                a(href="./index.html")
+                    p Bücher
 
-                p Diese Website ist mein akademisches, wie auch berufliches Portfolio. Somit haben diese Website, wie auch ihre Unterseiten, keinen gewerblichen Charakter. Demnach habe ich nachfolgend Name und Anschrift des Inhabers&nbsp;
-                    span.comment [Diensteanbieters]&nbsp;
-                    | — André-Pascal Werthwein — aufgeführt.&nbsp;
-                    sup [§1 Abs. 4 TMG, §55 Abs. 1 RstV]
+            section
+                a(href="./ueber-mich.html")
+                    p Über mich?
 
-                table.table-contact
-                    thead
-                    tbody
-                        tr
-                            td 
-                                strong Name:
-                            td André-Pascal Werthwein
-                                
-                        tr
-                            td 
-                                strong Anschrift:
-                            td Nietzschestraße 16,
-                                br 
-                                | 68165 Mannheim
-                                br 
-                                | Deutschland
-                                
-                        tr
-                            td
-                                strong E-Mail:
-                            td
-                                address
-                                    a.text-anchor(href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#97;&#110;&#100;&#114;&#101;&#119;&#101;&#114;&#116;&#104;&#119;&#101;&#105;&#110;&#46;&#100;&#101;") info[at]
-                                        span(style="display: none;") fuck-the-spam-bot
-                                        | andrewerthwein.de
+            section.active
+                a(href="./kontakt.html")
+                    p Kontakt
+
+        div.content
+            section.author-information
+                img(src="./media/portrait.jpg")
+
+                section
+                    h5 André-Pascal Werthwein
+
+                    p Hallo! Mein Name ist André-Pascal Werthwein. Ich wurde in Stuttgart geboren und habe »Kommunikationsdesign« mit einer Spezialisierung in Web Design, Web Development und User Experience Design studiert. Viel meiner freien Zeit verbringe ich unter anderem mit dem Schreiben kreativer Texte.
+
+                    p Mir macht es Spaß mich an neuen Stilen und neuen Geschichten zu versuchen. Darüber hinaus habe ich eine gewisse Leidenschaft für kreative Buch-Konzepte, die ich ausleben und hier präsentieren will.
+
+                    p André-Pascal Werthwein
+                        br
+                        | autor[at]andrewerthwein.de
+
+            section.content-books
+                h1 Kontakt
                 
-    p#to-the-top-button
-        a(href="#top") oben
+                section.legal-notices-grid
+                    section
+                        h4 Kontakt
 
-    footer
-        div
-            section
-                ul
-                    li
-                        strong Copyright 2021
-                    li André-Pascal Werthwein
-            
+                        p Diese Website ist mein akademisches, wie auch berufliches Portfolio. Somit haben diese Website, wie auch ihre Unterseiten, keinen gewerblichen Charakter. Demnach habe ich nachfolgend Name und Anschrift des Inhabers&nbsp;
+                            span.comment [Diensteanbieters]&nbsp;
+                            | — André-Pascal Werthwein — aufgeführt.&nbsp;
+                            sup [§1 Abs. 4 TMG, §55 Abs. 1 RstV]
 
-            ul
-                li
-                    a(href="./kontakt.html") Kontakt
-                li
-                    a(href="./impressum.html") Impressum
-                li
-                    a(href="./datenschutz.html") Datenschutzerklärung
+                        table.table-contact
+                            thead
+                            tbody
+                                tr
+                                    td 
+                                        strong Name:
+                                    td André-Pascal Werthwein
+                                        
+                                tr
+                                    td 
+                                        strong Anschrift:
+                                    td Nietzschestraße 16,
+                                        br 
+                                        | 68165 Mannheim
+                                        br 
+                                        | Deutschland
+                                        
+                                tr
+                                    td
+                                        strong E-Mail:
+                                    td
+                                        address
+                                            a.text-anchor(href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#97;&#110;&#100;&#114;&#101;&#119;&#101;&#114;&#116;&#104;&#119;&#101;&#105;&#110;&#46;&#100;&#101;") info[at]
+                                                span(style="display: none;") fuck-the-spam-bot
+                                                | andrewerthwein.de
+
+        footer
+            div
+            div
+                section
+                    ul
+                        li
+                            strong Copyright 2021
+                        li André-Pascal Werthwein
+
+                    ul
+                        li
+                            a(href="./kontakt.html") Kontakt
+                        li
+                            a(href="./impressum.html") Impressum
+                        li
+                            a(href="./datenschutz.html") Datenschutzerklärung
+                        
+                a(href="http://fat.link.andrewerthwein.de" target="_blank" rel="noopener")
+                    img(src="./media/logo.png")
         
-        a(href="http://fat.link.andrewerthwein.de" target="_blank" rel="noopener")
-            img(src="./media/logo.png")
-    
-    script(src="./js/main.js")
+        script(src="./js/main.js")
