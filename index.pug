@@ -4,12 +4,43 @@ html(lang="de")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
-        link(rel="stylesheet" href="./css/reset.min.css")
         link(rel="stylesheet" href="./css/design.min.css")
         title Portfolio — Autor
     body
+    header#navigation-main.navigation-main-index
+        a(href="./index.html")
+            img(src="./media/logo.png")
+        section.column-color
+        section
+        section.active
+            p Bücher
+
+        section
+            p Über mich?
+
+        section
+            p Kontakt
+
+    div.content
+        section.author-information
+            img(src="./media/portrait.jpg")
+
+            section
+                h5 André-Pascal Werthwein
+
+                p Hello! Mein Name ist André-Pascal Werthwein. Ich wurde in Stuttgart geboren und habe »Communication Designer« mit einer Spezialisierung in Web Design, Web Development und User Experience Design studiert. Viel meiner freien Zeit verbringe ich unter anderem mit dem Schreiben kreativer Texte.
+
+                p Mir macht es Spaß mich an neuen Stilen und neuen Geschichten zu versuchen. Darüber hinaus habe ich eine gewisse Leidenschaft für kreative Buch-Konzepte, die ich ausleben und hier präsentieren will.
+
+                p André-Pascal Werthwein
+                    br
+                    | autor[at]andrewerthwein.de
+
+        section.content-books
+    
 
     footer
+        div
         div
             section
                 ul
@@ -18,15 +49,15 @@ html(lang="de")
                     li André-Pascal Werthwein
             
 
-            ul
-                li
-                    a(href="./kontakt.html") Kontakt
-                li
-                    a(href="./impressum.html") Impressum
-                li
-                    a(href="./datenschutz.html") Datenschutzerklärung
+                ul
+                    li
+                        a(href="./kontakt.html") Kontakt
+                    li
+                        a(href="./impressum.html") Impressum
+                    li
+                        a(href="./datenschutz.html") Datenschutzerklärung
                     
-        a(href="http://fat.link.andrewerthwein.de" target="_blank" rel="noopener")
-            img(src="./media/logo.png")
+            a(href="http://fat.link.andrewerthwein.de" target="_blank" rel="noopener")
+                img(src="./media/logo.png")
     
     script(src="./js/main.js")

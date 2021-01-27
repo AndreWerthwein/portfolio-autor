@@ -21,55 +21,36 @@
 // ---- legal-notices:footer ---- //
 
 footer
+    width: calc(100% - #{$spacing-xxl})
+    margin: 0px 0px 0px $spacing-xxl
+    display: grid
+    grid-template-columns: 20% 80%
+    grid-gap: 0px
+
+footer > div
+    padding: $spacing-xxl 0px $spacing-l 0px
+    
+footer > div:first-child
+    background-color: $primary !important
+    color: $white !important
+
+footer > div:last-child
+    padding: $spacing-xxl $spacing-xxl $spacing-l $spacing-xxl !important
     display: flex
     justify-content: space-between
     align-items: top
-    margin: calc(#{$spacing-xl} + #{$spacing-s}) 0px $spacing-l 0px
-    padding: $spacing-l 0px 0px 0px 
-    font-size: 1rem
-    line-height: 1
-    border-top: 1px $black solid
-
-footer img
-    width: $width-xl
-    height: $height-xl
-
-footer p
-    margin: 0px
 
 footer ul
     display: flex
     justify-content: flex-start
     align-items: center
-    flex-wrap: wrap
 
-footer section ul
-    margin: 0px
+footer ul:last-child
+    margin: 0px 0px 0px 121px
 
-footer ul
-    margin: 0px 0px 0px 122px
-
-footer li:not(:last-child)
+footer ul li
     margin: 0px $spacing-m 0px 0px
 
-footer a
-    text-decoration: none
-    transition: all 0.3s ease-in-out
-
-footer a:hover,
-footer a:focus,
-footer a:active
-    text-decoration: underline
-
-footer section
-    display: flex
-    justify-content: space-between
-    align-items: top
-    
-footer section p
-    font-family: 'Crimson Pro Italic', Arial, Helvetica, sans-serif
-    font-style: italic
-
-@media all and (max-width: 925px)
-    footer ul:last-child
-        margin: 0px
+footer img
+    width: calc(#{$width-xxl} - #{$spacing-m})
+    height: calc(#{$height-xxl} - #{$spacing-m})

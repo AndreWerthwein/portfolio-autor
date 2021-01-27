@@ -1,0 +1,39 @@
+@import "../abstracts/variables.sass"
+
+#navigation-main
+    position: fixed
+    top: 0px 
+    left: 0px
+    width: 100%
+    display: grid
+    grid-template-columns: $width-xxl calc(20% - (#{$width-xxl} / 5)) calc(20% - (#{$width-xxl} / 5)) calc(20% - (#{$width-xxl} / 5)) calc(20% - (#{$width-xxl} / 5)) calc(20% - (#{$width-xxl} / 5))
+    height: $height-xxl
+    background-color: $white
+    box-shadow: 1px 1px 10px $black
+
+#navigation-main img
+    width: calc(#{$width-xxl} - #{$spacing-m})
+    height: calc(#{$height-xxl} - #{$spacing-m})
+    margin: $spacing-s
+
+.navigation-main-index > section:nth-child(4),
+.navigation-main-index > section:nth-child(5),
+.navigation-main-index > section:nth-child(6)
+    height: calc(#{$height-xxl} - #{$spacing-s})
+    border-bottom: calc(#{$spacing-s} / 2) $white solid
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+.active
+    border-bottom: $height-s $primary solid !important
+
+.navigation-main-index > section:nth-child(2)
+    height: $height-xxl
+    background-color: $primary
+
+.navigation-main-index > section > p
+    font-family: 'Crimson Pro Bold', Helvetica, Arial, sans-serif
+    font-weight: 800
+    font-size: 1.2rem
+    margin: 0px
